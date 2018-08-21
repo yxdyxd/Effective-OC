@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "EOCEmployee.h"
+#import <stdio.h>
 
 // 每个枚举的下标从0开始，逐次递增,位运算符(左移)，这种形式可以组合使用
 enum EOCConnectionState {
@@ -85,6 +86,8 @@ TTGstate state = TTGStateOK;
 
     // 调用方法
     [self dealWithState:TTGStateUnknow];
+    
+    void objc_msgSend(id self, SEL cmd, ...);
     
 }
 
